@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+
+* body {
+  box-sizing: border-box;
+}
+header {
+  background-color: aqua;
+  padding: 15px;
+  color: black;
+  font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+  font-size: 30px;
+  text-align: center;
+}
+section {
+  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+nav ul {
+  list-style-type: none;
+  padding: 15px;
+}
+nav {
+  background-color: antiquewhite;
+  color: black;
+  float: left;
+  padding: 15px;
+  width: 20%;
+  height: 200px;
+}
+article {
+  font-size: 12px;
+  width: 75%;
+  float: left;
+  padding: 5px;
+  height: 200px;
+}
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: chartreuse;
+}
+@media (max-width: 600px) {
+  width: 100%;
+  height: auto;
+}
